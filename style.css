@@ -30,24 +30,21 @@ body {
   background: #333;
 }
 
-/* Dropdown - initially hidden */
+
 .dropdown {
   background: #111;
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 0;              /* collapsed */
+  max-height: 0;              
   overflow: hidden;
-  transition: max-height 0.5s ease;  /* smooth scroll effect */
+  transition: max-height 0.5s ease;  
 }
 
-/* When hovered, expand smoothly */
 .nav-item:hover .dropdown {
-  max-height: 300px; /* set a big enough height for your content */
+  max-height: 550px; 
 }
-
 .dropdown li a {
-  display: block;
   padding: 10px 15px;
   color: white;
   text-decoration: none;
@@ -55,4 +52,7 @@ body {
 
 .dropdown li a:hover {
   background: #444;
+}
+.app {
+  height: 20px;
 }
