@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -55,4 +55,151 @@ body {
 }
 .app {
   height: 20px;
+} */
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
+.navbar {
+  background: #000;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  height: 20px;
+}
+
+.nav-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background: #333;
+}
+
+.dropdown {
+  background: #111;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.nav-item:hover .dropdown {
+  max-height: 600px;
+}
+
+.dropdown li a {
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  background: #444;
+}
+
+.app {
+  height: 20px;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-left: auto; 
+}
+
+@media (max-width: 992px) {
+  .nav-items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-item a {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; 
+  }
+
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: #000;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .nav-items.show {
+    max-height: 1000px; 
+  }
+
+  .nav-item a {
+    padding: 12px;
+    width: 100%;
+    border-bottom: 1px solid #222;
+  }
+
+  .dropdown {
+    position: relative;
+    width: 100%;
+  }
+
+  .dropdown li a {
+    padding-left: 25px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .nav-item a {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .dropdown li a {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+}
+  
+

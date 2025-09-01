@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar Example</title>
+  <title>Appple Clone</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="navbar">
-    <ul class="nav-items">
+ <!-- Hamburger button -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul class="nav-items id="nav-items>
       <li class="nav-item">
         <a href="#"> <img  class="app" src="apple.png" alt="apple"></a>
       <li class="nav-item">
@@ -25,7 +28,7 @@
       </li>
       </li>
       <li class="nav-item">
-        <a href="#">iPad</a>
+        <a href="#">Mac</a>
         <ul class="dropdown">
           <li><a href="#"><b>Explore All Mac</b></a></li>
           <li><a href="#"><b>MacBook Air</b></a></li>
@@ -72,7 +75,7 @@
           <li><a href="#"><b>Apple Watch Nike</b></a></li>
           <li><a href="#"><b>Apple Watch Hermes</b></a></li><br>
           <li><a href="#">Compare Watch</a></li>
-          <li><a href="#">Why Apple Watch</a></li>
+        
         </ul>
       </li>
       <li class="nav-item">
@@ -146,5 +149,11 @@
   </nav>
 
   <script src="script.js"></script>
+  <script>
+function toggleMenu() {
+  document.querySelector('.nav-items').classList.toggle('show');
+}
+</script>
+
 </body>
 </html>
