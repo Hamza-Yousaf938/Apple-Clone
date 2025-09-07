@@ -191,7 +191,7 @@ body {
   cursor: pointer;
 } 
 .home-text-2 {
-   color: black;
+   color: blueviolet;
    display: flex;
   align-items: center;
   justify-content: center;
@@ -274,8 +274,56 @@ body {
  /* home 4  */
  .home-4 {
     margin-top: 10px;
-  height: 570px;
+  height: 580px;
   width: 1255px;
   background-color:gainsboro;
   cursor: pointer;
  }
+ /* home 5 */
+ .home-5 {
+   margin-top: 10px;
+  height: 570px;
+  width: 1255px;
+  background-color:black;
+  cursor: pointer;
+ }
+ .home-text-5 {
+  color: white;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .b-5 {
+  background-color:black;
+  color: blue;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+ cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+ }
+ .b-5:hover {
+  background-color:blue;
+  color: white;
+ }
+ .home-phone-logo-5 {
+  display: flex;
+  justify-content: center; 
+  margin-top: 15px;        
+}
+
+.home-phone-logo-5 img {
+  width: 100%;
+  max-width: 200px; 
+  height: auto;      
+}
+/* home 6 */
+.home-6 {
+  margin-top: 10px;
+  height: 570px;
+  width: 1255px;
+  background-color:black;
+  cursor: pointer;
+}
