@@ -1,9 +1,14 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-    padding-top: 60px; 
+    padding-top: 60px;
+    overflow-x: hidden; 
 }
-
+section {
+  max-width: 1255px;   
+  width: 100%;       
+  margin: 10px auto;   
+}
 .navbar {
   background: #333;
   padding: 0 20px;
@@ -153,7 +158,10 @@ body {
 /*                   home 1            */
 .home-1 {
   height: 570px;
-  width: 1255px;
+  width: 100%;          
+  max-width: 1255px;    
+  margin: 10px auto;   
+  box-sizing: border-box;
   background-color: #000;
 }  
 .home-logo {
@@ -186,7 +194,10 @@ body {
 .home-2 {
   margin-top: 10px;
   height: 570px;
-  width: 1255px;
+ width: 100%;          
+  max-width: 1255px;   
+  margin: 10px auto;    
+  box-sizing: border-box;
   background-color:gainsboro;
   cursor: pointer;
 } 
@@ -249,7 +260,10 @@ body {
 .home-3 {
   margin-top: 10px;
   height: 570px;
-  width: 1255px;
+  width: 100%;          
+  max-width: 1255px;   
+  margin: 10px auto;    
+  box-sizing: border-box;
   background-color:gainsboro;
   cursor: pointer;
   background-image: url("airpod.jpg");
@@ -274,8 +288,8 @@ body {
  /* home 4  */
  .home-4 {
     margin-top: 10px;
-  height: 580px;
-  width: 1255px;
+  max-height: 1255px;
+  width: 100%;
   background-color:gainsboro;
   cursor: pointer;
  }
@@ -283,7 +297,10 @@ body {
  .home-5 {
    margin-top: 10px;
   height: 570px;
-  width: 1255px;
+  width: 100%;          
+  max-width: 1255px;   
+  margin: 10px auto;    
+  box-sizing: border-box;
   background-color:black;
   cursor: pointer;
  }
@@ -323,7 +340,42 @@ body {
 .home-6 {
   margin-top: 10px;
   height: 570px;
-  width: 1255px;
-  background-color:black;
+  width: 100%;          
+  max-width: 1255px;   
+  margin: 10px auto;    
+  box-sizing: border-box;
+  background-color:gainsboro;
   cursor: pointer;
+}
+ .home-phone-logo-6 {
+  display: flex;
+  justify-content: center; 
+  margin-top: 15px;        
+}
+
+.home-phone-logo-6 img {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;      
+}
+.home-text-6 {
+  color: black;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b-6 {
+   background-color:blueviolet;
+  color: white;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+ cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+}
+.b-6:hover {
+    background-color:blue;
+  color: white;
 }
