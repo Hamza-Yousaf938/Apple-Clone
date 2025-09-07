@@ -175,9 +175,12 @@ body {
   text-decoration-color: black;
   height: 40px;
   width: 150px;
-  border-radius: 10px;
+  border-radius: 20px;
  margin-left: 570px;
  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
 }
 /*  home 2 */
 .home-2 {
@@ -223,6 +226,9 @@ body {
   width: 200px;
   border-radius: 10px;
  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
 }
 .b-2:hover {
   background-color:blue;
@@ -239,6 +245,7 @@ body {
   max-width: 600px; 
   height: auto;      
 }
+ /* home 3  */
 .home-3 {
   margin-top: 10px;
   height: 570px;
@@ -256,8 +263,19 @@ body {
  margin-left: 600px;
  margin-top: 130px;
  cursor: pointer; 
+ border-width: 2px;
+  border-style: solid;
+  border-color: blue;
 }
 .home-text-button-3:hover {
   background-color: blue;
   color: white;
 }
+ /* home 4  */
+ .home-4 {
+    margin-top: 10px;
+  height: 570px;
+  width: 1255px;
+  background-color:gainsboro;
+  cursor: pointer;
+ }
