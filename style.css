@@ -379,3 +379,14 @@ section {
     background-color:blue;
   color: white;
 }
+/* home 7  */
+.home-7 {
+    margin-top: 10px;
+  height: 570px;
+  width: 100%;          
+  max-width: 1255px;   
+  margin: 10px auto;    
+  box-sizing: border-box;
+  background-color:gainsboro;
+  cursor: pointer;
+}
