@@ -94,16 +94,16 @@ section {
   border: none;
   margin-left: auto; 
 }
-
 @media (max-width: 992px) {
-  .nav-items {
-    flex-wrap: wrap;
-    justify-content: center;
+  .home-text-button-1,
+  .home-text-button-3,
+  .b-1, .b-2, .b-5, .b-6, .b-8 {
+    margin: 15px auto; 
   }
 
-  .nav-item a {
-    padding: 12px 15px;
-    font-size: 14px;
+  .home-text-button-2 {
+    flex-direction: column;
+    align-items: center; 
   }
 }
 
@@ -178,13 +178,42 @@ section {
 .home-text h2 {
    color: skyblue;
 }
+.home-text-button-1 {
+  background-color: white;
+  text-decoration-color: black;
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+
+  /* ✅ Always center */
+  display: block;
+  margin: 20px auto; 
+}
+
+.home-text-button-1,
+.home-text-button-3 {
+  display: block;
+  margin: 20px auto; 
+}
+
+.home-text-button-2,
+.home-text-button-5,
+.home-text-button-6 {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+}
+
 .home-text-button-1  {
   background-color: white;
   text-decoration-color: black;
   height: 40px;
   width: 150px;
   border-radius: 20px;
- margin-left: 570px;
  cursor: pointer;
   border-width: 2px;
   border-style: solid;
@@ -274,7 +303,6 @@ section {
   height: 40px;
   width: 70px;
   border-radius: 30px;
- margin-left: 600px;
  margin-top: 130px;
  cursor: pointer; 
  border-width: 2px;
@@ -286,6 +314,12 @@ section {
   color: white;
 }
  /* home 4  */
+ .combine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+ }
  .home-4 {
     margin-top: 10px;
   max-height: 1255px;
@@ -296,11 +330,8 @@ section {
  /* home 5 */
  .home-5 {
    margin-top: 10px;
-  height: 570px;
+  max-height: 1255px;
   width: 100%;          
-  max-width: 1255px;   
-  margin: 10px auto;    
-  box-sizing: border-box;
   background-color:black;
   cursor: pointer;
  }
@@ -411,4 +442,82 @@ section {
   box-sizing: border-box;
   background-color:gainsboro;
   cursor: pointer;
+}
+.b-8 {
+  background-color: blue;
+  color: white;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+ cursor: pointer;
+}
+.b-8:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .home-1, .home-2, .home-3, .home-6, .home-7, .home-8, .home-9 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .home-text-button-1,
+  .home-text-button-3 {
+    margin-left: 0;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .combine {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .home-logo, .home-text, .home-text-2, .home-text-5, .home-text-6 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text-button-1,
+.home-text-button-3,
+.b-1, .b-2, .b-5, .b-6, .b-8 {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+  .home-text-button-2 {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+}
+
+
+@media (max-width: 480px) {
+  .home-text h2 {
+    font-size: 18px;
+  }
+
+  .home-text-button-1,
+  .home-text-button-3 {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .b-1, .b-2, .b-5, .b-6, .b-8 {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .home-phone-logo img,
+  .home-phone-logo-5 img,
+  .home-phone-logo-6 img {
+    max-width: 220px;
+  }
 }
