@@ -401,3 +401,14 @@ section {
   background-color:gainsboro;
   cursor: pointer;
 }
+/* home 9 */
+.home-9 {
+    margin-top: 10px;
+  height: 570px;
+  width: 100%;          
+  max-width: 1255px;   
+  margin: 10px auto;    
+  box-sizing: border-box;
+  background-color:gainsboro;
+  cursor: pointer;
+}
