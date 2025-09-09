@@ -521,3 +521,50 @@ section {
     max-width: 220px;
   }
 }
+/* home 10 */
+.slider {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .slider-track {
+      display: inline-block;
+      animation: scroll 20s linear infinite;
+    }
+
+    .slide {
+      display: inline-block;
+      width: 300px;
+      height: 200px;
+      margin-right: 20px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+    }
+
+    /* Example posters */
+    .slide1 { background-image: url("film.png"); }
+    .slide2 { background-image: url("poster.png"); }
+    .slide3 { background-image: url("show.png"); }
+    .slide4 { background-image: url("sony.png"); }
+    .slide4 { background-image: url("think.png"); }
+
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    /* home 11 */
+    .home-11 {
+    margin-top: 10px;
+  height: 570px;
+  width: 100%;          
+  max-width: 1255px;   
+  margin: 10px auto;    
+  box-sizing: border-box;
+  background-color:gainsboro;
+  cursor: pointer;
+}
