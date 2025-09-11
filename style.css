@@ -575,4 +575,17 @@ li {
     letter-spacing: -0.01em;
     font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
-/* home 11 footer  */
+/* home 12 footer  */
+  .home-12 {
+    margin-top: 10px;
+  height: 570px;
+  width: 100%;          
+  max-width: 1255px;   
+  margin: 10px auto;    
+  box-sizing: border-box;
+  background-color:black;
+  /* cursor: pointer; */
+}
+a {
+  text-decoration: none;
+}
