@@ -575,17 +575,109 @@ li {
     letter-spacing: -0.01em;
     font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
+/* ✅ Responsive design only for .home-11 */
+@media (max-width: 992px) {
+  .home-11 {
+    height: auto;          /* allow it to grow naturally */
+    padding: 20px;         /* add breathing space */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-11 {
+    text-align: center;    /* center align on tablets */
+    padding: 15px;
+  }
+  .home-11 li {
+    font-size: 14px;       /* slightly bigger for readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-11 {
+    padding: 10px;
+  }
+  .home-11 li {
+    font-size: 12px;       /* smaller text for mobile */
+    line-height: 1.4;
+  }
+}
+
 /* home 12 footer  */
   .home-12 {
     margin-top: 10px;
-  height: 570px;
+
   width: 100%;          
   max-width: 1255px;   
   margin: 10px auto;    
   box-sizing: border-box;
   background-color:black;
-  /* cursor: pointer; */
+   padding: 40px 20px;
+
 }
 a {
   text-decoration: none;
+  color: white;
+}
+a:active {
+  color: purple;
+}
+a:hover {
+  color: deepskyblue;
+}
+
+
+.home-12 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+.home-12 a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+.home-12 a:hover {
+  color: deepskyblue;
+}
+
+.home-12 li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+@media (max-width: 992px) {
+  .home-12 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .home-12 a {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .home-12 {
+    padding: 15px;
+  }
+
+  .home-12 li {
+    font-size: 12px;
+  }
+
+  .home-12 a {
+    font-size: 12px;
+  }
 }
